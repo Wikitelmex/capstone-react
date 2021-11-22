@@ -25,7 +25,7 @@ Before we start, make sure you fit the prerequisites, the source code is inside 
 - React based on components
 
 ### Setup
-- git clone https://github.com/Wikitelmex/Pending....git
+- git clone https://github.com/Wikitelmex/capstone-react.git
   
 ### Install
 - `npm install`
@@ -50,7 +50,7 @@ Before we start, make sure you fit the prerequisites, the source code is inside 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Wikitelmex/Pending.../issues).
+Feel free to check the [issues page](https://github.com/Wikitelmex/capstone-react/issues).
 
 ## Show your support
 Give a ⭐️ if you like this project!
