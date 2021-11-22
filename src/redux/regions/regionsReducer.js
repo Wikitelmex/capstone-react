@@ -3,7 +3,7 @@ import {
   REGIONS_FETCH_FAILURE,
   REGIONS_FETCH_REQUEST,
   COUNTRY_FETCH_SUCCESS,
-} from "./regionsTypes";
+} from './regionsTypes';
 
 const initialState = {
   regions: [],
