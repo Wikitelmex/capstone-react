@@ -10,10 +10,12 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import HomePage from './pages/HomePage';
 import Regionpage from './pages/RegionPage';
+import Fetchcomponent from './components/fetchComponent';
 
 function App() {
   return (
     <Provider store={store}>
+      <Fetchcomponent />
       <div className="App">
         <h1>Capstone Project React</h1>
         <h3>By Alex...</h3>

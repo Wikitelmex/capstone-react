@@ -3,13 +3,17 @@ import {
   REGIONS_FETCH_FAILURE,
   REGIONS_FETCH_REQUEST,
   COUNTRY_FETCH_SUCCESS,
+  REGIONS_FILTER
 } from './regionsTypes';
 
 const initialState = {
   regions: [],
+  regionsFiltered: [],
   loading: false,
   error: null,
-  country: {},
+  country: {
+    name: 'noData',
+  },
 };
 
 const regionsReducer = (state = initialState, action) => {
@@ -35,6 +39,11 @@ const regionsReducer = (state = initialState, action) => {
       return {
         ...state,
         country: action.payload,
+      };
+    case REGIONS_FILTER:
+      return {
+        ...state,
+        regionsFiltered: state.regions.filter(region => region.name.toLowerCase().includes(action.payload.toLowerCase())),
       };
     default:
       return state;

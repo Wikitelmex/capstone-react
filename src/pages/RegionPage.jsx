@@ -1,15 +1,24 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
 
 const Regionpage = () => {
   const title = 'Region Page';
   const { regionId } = useParams();
+  const regionData = useSelector(state => {
+    return state.regions.regions.filter(region => region.id === regionId)[0]
+  });
+
   return (
     <div>
       <h1>{title}</h1>
       <p>
         you are in region:
-        {regionId}
+        {regionData.name}
+      </p>
+      <p>
+        today confirmed:
+        {regionData.today_confirmed}
       </p>
       <NavLink to="/">back to Home</NavLink>
     </div>
