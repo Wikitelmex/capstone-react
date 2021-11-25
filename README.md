@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Space Travelers' Hub
-> This App uses react, to creat an SPA related to today's covid statics in Mexico (Capstone project for react Module).
+> This App uses react, to creat an SPA related to SpaceX rockets and missions.
 
 ## Built With
 - Javascript
@@ -11,10 +11,10 @@
 - React
 
 ## Live Demo
-Pending....
+https://wikitelmex.github.io/space2/
 
 ## Screenshot
-Pending....
+![image](https://user-images.githubusercontent.com/59240486/142464085-7ea17d81-8ba5-43f5-832c-77e00b25aee3.png)
 
 ## Getting Started
 Before we start, make sure you fit the prerequisites, the source code is inside the folder SRC/ 
@@ -25,7 +25,7 @@ Before we start, make sure you fit the prerequisites, the source code is inside 
 - React based on components
 
 ### Setup
-- git clone https://github.com/Wikitelmex/capstone-react.git
+- git clone https://github.com/Wikitelmex/space2.git
   
 ### Install
 - `npm install`
@@ -42,6 +42,11 @@ Before we start, make sure you fit the prerequisites, the source code is inside 
 
 ## Authors
 
+👤 **Abel Lavieri**
+- GitHub: [@Abel](https://github.com/alvp01)
+- Twitter: [@Abel](https://twitter.com/alvp01)
+- LinkedIn: [Abel](https://www.linkedin.com/in/alvp01/)
+
 👤 **Alex Castillo**
 - GitHub: [@Alex](https://github.com/Wikitelmex)
 - Twitter: [@Alex](https://twitter.com/Alejand84515448)
@@ -50,7 +55,7 @@ Before we start, make sure you fit the prerequisites, the source code is inside 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Wikitelmex/capstone-react/issues).
+Feel free to check the [issues page](https://github.com/Wikitelmex/kanban-capstone/issues).
 
 ## Show your support
 Give a ⭐️ if you like this project!
