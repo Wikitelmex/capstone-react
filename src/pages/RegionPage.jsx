@@ -5,9 +5,11 @@ import { NavLink, useParams } from 'react-router-dom';
 const Regionpage = () => {
   const title = 'Region Page';
   const { regionId } = useParams();
-  const regionData = useSelector(state => {
-    return state.regions.regions.filter(region => region.id === regionId)[0]
-  });
+  const regionData = useSelector(
+    (state) => (
+      state.regions.regions.filter((region) => region.id === regionId)[0]
+    ),
+  );
 
   return (
     <div>

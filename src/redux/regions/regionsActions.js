@@ -4,7 +4,7 @@ import {
   REGIONS_FETCH_FAILURE,
   REGIONS_FETCH_REQUEST,
   COUNTRY_FETCH_SUCCESS,
-  REGIONS_FILTER
+  REGIONS_FILTER,
 } from './regionsTypes';
 
 export const fetchCountry = (country) => ({

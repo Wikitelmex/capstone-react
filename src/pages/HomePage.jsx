@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
@@ -12,15 +12,11 @@ const HomePage = ({
   regionFilteredData,
   regionsFilter,
 }) => {
-  
-
   useEffect(() => {
     if (regionData.length === 0) {
       fetchRegions();
-    }    
+    }
   }, []);
-
-  const [filter, setFilter] = useState('');
 
   if (statusData.loading) {
     return <h1>Loading...</h1>;
@@ -84,6 +80,11 @@ HomePage.propTypes = {
   regionData: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
   })).isRequired,
+  regionFilteredData: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    today_confirmed: PropTypes.number,
+  })).isRequired,
+  regionsFilter: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => ({

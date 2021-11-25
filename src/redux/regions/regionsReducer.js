@@ -3,7 +3,7 @@ import {
   REGIONS_FETCH_FAILURE,
   REGIONS_FETCH_REQUEST,
   COUNTRY_FETCH_SUCCESS,
-  REGIONS_FILTER
+  REGIONS_FILTER,
 } from './regionsTypes';
 
 const initialState = {
@@ -43,7 +43,9 @@ const regionsReducer = (state = initialState, action) => {
     case REGIONS_FILTER:
       return {
         ...state,
-        regionsFiltered: state.regions.filter(region => region.name.toLowerCase().includes(action.payload.toLowerCase())),
+        regionsFiltered: state.regions.filter(
+          (region) => region.name.toLowerCase().includes(action.payload.toLowerCase()),
+        ),
       };
     default:
       return state;
