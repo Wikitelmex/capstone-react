@@ -40,7 +40,7 @@ describe('test regions Reducer', () => {
   it('fetchRegionsSuccess action', () => {
     const initialState = {};
     const store = mockStore(initialState);
-    const regions= [
+    const regions = [
       {
         name: 'Chihuahua',
       },

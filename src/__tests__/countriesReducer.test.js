@@ -39,7 +39,7 @@ describe('test countries Reducer', () => {
   it('fetchCountriesSuccess action', () => {
     const initialState = {};
     const store = mockStore(initialState);
-    const countries= [
+    const countries = [
       {
         name: 'Afghanistan',
       },

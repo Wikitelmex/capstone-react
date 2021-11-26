@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import WorldPage from '../Pages/WorldPage';
 import {
   BrowserRouter as Router,
 } from 'react-router-dom';
+import WorldPage from '../Pages/WorldPage';
 
 import store from '../redux/store';
 
