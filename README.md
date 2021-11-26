@@ -1,5 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+# Special thanks
+- [to Nelson Sakwa on Behance for his amazing template](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29)
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
+
 # React Redux Capstone project
 > This App uses react & redux, to creat an SPA related to Covid data.
 
@@ -25,7 +30,7 @@ Before we start, make sure you fit the prerequisites, the source code is inside 
 - React based on components
 
 ### Setup
-- git clone https://github.com/Wikitelmex/space2.git
+- git clone https://github.com/Wikitelmex/capstone-react.git
   
 ### Install
 - `npm install`
