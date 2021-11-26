@@ -1,5 +1,6 @@
 /* eslint-disable */
 let response = {};
+/*
 response.data = (
   {
     dates: {
@@ -191,7 +192,41 @@ const totalData = Object.keys(response.data.dates).map((key) => (
 
 const { regions, ...countryData } = totalData;
 
+*/
 const today = new Date();
 const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
 
-console.log(countryData);
+
+response.data = (
+  {
+    "dates": {
+      "2021-11-26": {
+        "countries":{
+          "Afghanistan": {
+            "date": "2021-11-22",
+            "id": "afghanistan",
+          },
+          "Mexico": {
+            "date": "2021-11-22",
+            "id": "afghanistan",
+          },
+          "Pakistan": {
+            "date": "2021-11-22",
+            "id": "afghanistan",
+          },
+          "Angola": {
+            "date": "2021-11-22",
+            "id": "afghanistan",
+          },
+        }
+      },
+    },
+  }
+);
+
+const apiResponse = response.data.dates[date].countries;
+const countries = Object.keys(apiResponse).map((key) => (
+  {
+    ...apiResponse[key],
+  }));
+console.log(countries);

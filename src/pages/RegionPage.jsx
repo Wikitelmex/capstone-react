@@ -1,9 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { NavLink, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import Menucomponent from '../components/MenuComponent';
+import './pageStyle.css';
 
 const Regionpage = () => {
-  const title = 'Region Page';
   const { regionId } = useParams();
   const regionData = useSelector(
     (state) => (
@@ -12,17 +13,37 @@ const Regionpage = () => {
   );
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>
-        you are in region:
-        {regionData.name}
-      </p>
-      <p>
-        today confirmed:
-        {regionData.today_confirmed}
-      </p>
-      <NavLink to="/">back to Home</NavLink>
+    <div className="p-1">
+      <Menucomponent title={regionData.name} />
+      <div className="card bg-pink">
+        <h1 className="card-header">{regionData.name}</h1>
+        <div className="card-body">
+          <p>
+            today confirmed:
+            {regionData.today_confirmed}
+          </p>
+          <p>
+            today deaths:
+            {regionData.today_deaths}
+          </p>
+          <p>
+            today recovered:
+            {regionData.today_recovered}
+          </p>
+          <p>
+            total confirmed:
+            {regionData.total_confirmed}
+          </p>
+          <p>
+            total deaths:
+            {regionData.total_deaths}
+          </p>
+          <p>
+            total recovered:
+            {regionData.total_recovered}
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

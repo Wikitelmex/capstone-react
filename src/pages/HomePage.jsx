@@ -1,25 +1,28 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import { fetchRegions, regionsFilter } from '../redux';
+import Menucomponent from '../components/MenuComponent';
+import Loadingcomponent from '../components/LoadingComponent';
+import './pageStyle.css';
 
 const HomePage = ({
   fetchRegions,
-  regionData,
   countryData,
   statusData,
   regionFilteredData,
   regionsFilter,
 }) => {
+  const { countryId } = useParams();
+
   useEffect(() => {
-    if (regionData.length === 0) {
-      fetchRegions();
-    }
+    fetchRegions(countryId);
+    regionsFilter('');
   }, []);
 
   if (statusData.loading) {
-    return <h1>Loading...</h1>;
+    return <div><Loadingcomponent /></div>;
   }
 
   if (statusData.error) {
@@ -33,35 +36,60 @@ const HomePage = ({
 
   return (
     <div>
-
-      <h1>Home Page</h1>
-      <p>
-        Country:
-        {countryData.name}
-      </p>
-      <p>
-        Today confirmed:
-        {countryData.today_confirmed}
-      </p>
-      <p>
-        Source:
-        {countryData.source}
-      </p>
-      <hr />
-      <span>Filter</span>
-      <h2>Regions</h2>
-      <input type="text" onChange={(e) => regionsFilter(e.target.value)} />
-      {
-        regionFilteredData.map((region) => (
-          <p key={region.id}>
-            <NavLink to={(`/region/${region.id}`)}>
-              {region.name}
-            </NavLink>
-            today confirmed:
-            {region.today_confirmed}
+      <Menucomponent title={countryData.name} />
+      <div className="d-flex flex-row">
+        <h1 className="col-6 text-light text-center align-self-center">{countryData.name}</h1>
+        <div className="col-6 text-light">
+          <p>
+            Today confirmed:
+            {countryData.today_confirmed}
           </p>
-        ))
-      }
+          <p>
+            Today deaths:
+            {countryData.today_deaths}
+          </p>
+          <p>
+            Today recovered:
+            {countryData.today_recovered}
+          </p>
+          <p>
+            Today open cases:
+            {countryData.today_open_cases}
+          </p>
+          <p>
+            Yesterday deaths:
+            {countryData.yesterday_deaths}
+          </p>
+          <p>
+            Yesterday recovered:
+            {countryData.yesterday_recovered}
+          </p>
+          <p>
+            Source:
+            {countryData.source}
+          </p>
+        </div>
+      </div>
+      <hr />
+      <input className="form-control" placeholder="Search by Region..." type="text" onChange={(e) => regionsFilter(e.target.value)} />
+      <br />
+      <h5 className="bg-pink-complement p-1">
+        <span className="ms-1">City/Town Breakdown</span>
+      </h5>
+      <table className="col-12">
+        {
+          regionFilteredData.map((region) => (
+            <tr className="d-flex flex-row justify-content-between p-3" key={region.id}>
+              <span>{region.name}</span>
+              today confirmed:
+              {region.today_confirmed}
+              <NavLink to={(`/region/${region.id}`)}>
+                <i className="bi bi-arrow-right-circle text-light" />
+              </NavLink>
+            </tr>
+          ))
+        }
+      </table>
     </div>
   );
 };
@@ -76,10 +104,12 @@ HomePage.propTypes = {
     name: PropTypes.string,
     source: PropTypes.string,
     today_confirmed: PropTypes.number,
+    today_deaths: PropTypes.number,
+    today_recovered: PropTypes.number,
+    today_open_cases: PropTypes.number,
+    yesterday_deaths: PropTypes.number,
+    yesterday_recovered: PropTypes.number,
   }).isRequired,
-  regionData: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-  })).isRequired,
   regionFilteredData: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     today_confirmed: PropTypes.number,
@@ -95,7 +125,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchRegions: () => dispatch(fetchRegions()),
+  fetchRegions: (country) => dispatch(fetchRegions(country)),
   regionsFilter: (filter) => dispatch(regionsFilter(filter)),
 });
 
