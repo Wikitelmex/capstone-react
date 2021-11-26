@@ -48,14 +48,14 @@ Before we start, make sure you fit the prerequisites, the source code is inside 
 
 ## Authors
 👤 **Alex Castillo**
-- GitHub: [@Alex](https://github.com/Wikitelmex)
+- GitHub: [Alex](https://github.com/Wikitelmex)
 - Twitter: [@Alex](https://twitter.com/Alejand84515448)
 - LinkedIn: [Alex Castillo](https://www.linkedin.com/in/alejandro-castillo-6849131a9/)
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Wikitelmex/kanban-capstone/issues).
+Feel free to check the [issues page](https://github.com/Wikitelmex/capstone-react/issues).
 
 ## Show your support
 Give a ⭐️ if you like this project!
