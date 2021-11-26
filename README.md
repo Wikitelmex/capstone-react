@@ -47,12 +47,6 @@ Before we start, make sure you fit the prerequisites, the source code is inside 
 - `npm run deploy`
 
 ## Authors
-
-👤 **Abel Lavieri**
-- GitHub: [@Abel](https://github.com/alvp01)
-- Twitter: [@Abel](https://twitter.com/alvp01)
-- LinkedIn: [Abel](https://www.linkedin.com/in/alvp01/)
-
 👤 **Alex Castillo**
 - GitHub: [@Alex](https://github.com/Wikitelmex)
 - Twitter: [@Alex](https://twitter.com/Alejand84515448)
