@@ -20,6 +20,7 @@
 https://wikitelmex.github.io/space2/
 
 ## Screenshot
+![image](https://user-images.githubusercontent.com/59240486/143644373-2a0e4d43-6fb6-471c-a124-2bd8ba551a84.png)
 
 ## Getting Started
 Before we start, make sure you fit the prerequisites, the source code is inside the folder SRC/ 
