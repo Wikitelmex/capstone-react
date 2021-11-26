@@ -3,9 +3,11 @@ import thunk from 'redux-thunk';
 // import logger from 'redux-logger';
 
 import regionsReducer from './regions/regionsReducer';
+import countriesReducer from './countries/countriesReducer';
 
 const mixReducers = combineReducers({
   regions: regionsReducer,
+  countries: countriesReducer,
 });
 
 const store = createStore(

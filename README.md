@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Space Travelers' Hub
-> This App uses react, to creat an SPA related to SpaceX rockets and missions.
+# React Redux Capstone project
+> This App uses react & redux, to creat an SPA related to Covid data.
 
 ## Built With
 - Javascript
@@ -9,12 +9,12 @@
 - HTML
 - Bootstrap
 - React
+- Redux
 
 ## Live Demo
 https://wikitelmex.github.io/space2/
 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/59240486/142464085-7ea17d81-8ba5-43f5-832c-77e00b25aee3.png)
 
 ## Getting Started
 Before we start, make sure you fit the prerequisites, the source code is inside the folder SRC/ 
