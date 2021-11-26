@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import {
   BrowserRouter as Router,
 } from 'react-router-dom';
-import WorldPage from '../Pages/WorldPage';
+import WorldPage from '../Pages/WorldPage.js';
 
 import store from '../redux/store';
 
