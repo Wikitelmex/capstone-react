@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders World page with redux 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="d-flex flex-column w-100 h-100 text-center align-items-center justify-content-center"
+    >
+      <br />
+      <br />
+      <h1>
+        Loading...
+      </h1>
+      <div
+        class="spinner-border"
+        role="status"
+      >
+        <span
+          class="visually-hidden"
+        >
+          Loading...
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
