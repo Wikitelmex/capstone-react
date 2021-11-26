@@ -45,6 +45,26 @@ const HomePage = ({
             {countryData.today_confirmed}
           </p>
           <p>
+            Today deaths:
+            {countryData.today_deaths}
+          </p>
+          <p>
+            Today recovered:
+            {countryData.today_recovered}
+          </p>
+          <p>
+            Today open cases:
+            {countryData.today_open_cases}
+          </p>
+          <p>
+            Yesterday deaths:
+            {countryData.yesterday_deaths}
+          </p>
+          <p>
+            Yesterday recovered:
+            {countryData.yesterday_recovered}
+          </p>
+          <p>
             Source:
             {countryData.source}
           </p>
@@ -84,6 +104,11 @@ HomePage.propTypes = {
     name: PropTypes.string,
     source: PropTypes.string,
     today_confirmed: PropTypes.number,
+    today_deaths: PropTypes.number,
+    today_recovered: PropTypes.number,
+    today_open_cases: PropTypes.number,
+    yesterday_deaths: PropTypes.number,
+    yesterday_recovered: PropTypes.number,
   }).isRequired,
   regionFilteredData: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
