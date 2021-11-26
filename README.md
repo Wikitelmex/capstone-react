@@ -17,7 +17,7 @@
 - Redux
 
 ## Live Demo
-https://wikitelmex.github.io/space2/
+https://capstone-react-wikitelmex.herokuapp.com/
 
 ## Screenshot
 ![image](https://user-images.githubusercontent.com/59240486/143644373-2a0e4d43-6fb6-471c-a124-2bd8ba551a84.png)
