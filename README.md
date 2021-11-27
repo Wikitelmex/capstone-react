@@ -22,6 +22,9 @@ https://capstone-react-wikitelmex.herokuapp.com/
 ## Screenshot
 ![image](https://user-images.githubusercontent.com/59240486/143644373-2a0e4d43-6fb6-471c-a124-2bd8ba551a84.png)
 
+## Loom video
+https://www.loom.com/share/01375ac6aa9f4c2e9d4306d3935c81a9
+
 ## Getting Started
 Before we start, make sure you fit the prerequisites, the source code is inside the folder SRC/ 
 
