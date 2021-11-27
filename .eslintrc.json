@@ -20,7 +20,8 @@
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "linebreak-style": 0,
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "no-return-assign": "off"
   },
   "ignorePatterns": [
     "dist/",

@@ -34,6 +34,9 @@ const Worldpage = ({
     );
   }
 
+  let aux = 1;
+  const cardC1 = 'card bg-pink col-5 mb-1';
+  const cardC2 = 'card bg-pink-complement col-5 mb-1';
   return (
     <div>
       <Menucomponent title="Home" />
@@ -48,7 +51,10 @@ const Worldpage = ({
         <div className="d-flex flex-wrap justify-content-evenly">
           {
             countryFilteredData.map((country) => (
-              <div className="card bg-pink col-5 mb-1" key={country.id}>
+              <div className={(aux < 2 ? cardC1 : cardC2)} key={country.id}>
+                <p className="d-none">
+                  {aux < 3 ? aux += 1 : aux = 0}
+                </p>
                 <div className="card-header d-flex flex-row justify-content-between">
                   <span>
                     {country.name}
