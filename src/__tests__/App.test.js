@@ -6,7 +6,11 @@ import App from '../App';
 afterEach(cleanup);
 
 test('renders learn react link', () => {
-  render(<App />);
+  render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+  );
   const linkElement = screen.getByTestId('mainApp');
   expect(linkElement).toBeInTheDocument();
 });
