@@ -14,7 +14,7 @@ import Worldpage from './pages/WorldPage';
 
 function App() {
   return (
-    <div>
+    <div data-testid="mainApp">
       <Provider store={store}>
         <Router>
           <Switch>
