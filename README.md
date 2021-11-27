@@ -6,7 +6,7 @@
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
 
 # React Redux Capstone project
-> This App uses react & redux, to creat an SPA related to Covid data.
+> This App uses react, redux, bootstrap; to create an SPA related to Covid data in the entire world, you can see the especific data of each country in the first page of the app, and see the details and regions, clicking inside the country, I hope you enjoy it.
 
 ## Built With
 - Javascript
@@ -34,22 +34,27 @@ Before we start, make sure you fit the prerequisites, the source code is inside 
 - React based on components
 
 ### Setup
-- git clone https://github.com/Wikitelmex/capstone-react.git
+- Open a cli "new terminal" of VSCode (in terminal menu click on "new terminal")
+- Type this code in the terminal: `git clone https://github.com/Wikitelmex/capstone-react.git` and press enter
+- Type this code in the terminal: `cd capstone-react`
+- Continue inside the CLI terminal with the next step "Install"
   
 ### Install
-- `npm install`
-- `npm install --also=dev` (to install the dev dependencies, like webpack)
+- Type this code in the terminal: `npm install`
+- Type this code in the terminal: `npm install --also=dev` and press enter (to install the dev dependencies, like webpack)
+- Finally, type this code in the terminal: `code .`
 
 ### Usage
-- `npm start` from VSCode
+- In a terminal window inside VSCode, type this code: `npm start`
+- A new window will open in the browser, and you can see the app running
 
 ### Run tests
-- `npm tests`
+- Type this code in the terminal: `npm run test`
 
 ### Deployment
 - `npm run deploy`
 
-## Authors
+## Author
 👤 **Alex Castillo**
 - GitHub: [Alex](https://github.com/Wikitelmex)
 - Twitter: [@Alex](https://twitter.com/Alejand84515448)

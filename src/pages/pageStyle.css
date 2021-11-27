@@ -8,4 +8,8 @@
   height: 200px;
 }
 
+.card {
+  border-radius: 0;
+}
+
 tr:nth-child(even) { background-color: #d04379; }

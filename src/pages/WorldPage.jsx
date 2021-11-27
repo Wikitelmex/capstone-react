@@ -35,8 +35,8 @@ const Worldpage = ({
   }
 
   let aux = 1;
-  const cardC1 = 'card bg-pink col-5 mb-1';
-  const cardC2 = 'card bg-pink-complement col-5 mb-1';
+  const cardC1 = 'card bg-pink col-6';
+  const cardC2 = 'card bg-pink-complement col-6';
   return (
     <div>
       <Menucomponent title="Home" />
