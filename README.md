@@ -20,7 +20,14 @@
 https://capstone-react-wikitelmex.herokuapp.com/
 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/59240486/143644373-2a0e4d43-6fb6-471c-a124-2bd8ba551a84.png)
+### World Countries home page:
+![image](https://user-images.githubusercontent.com/59240486/143690568-07cf7ccb-1dca-438c-9f24-a2602d1f4723.png)
+### Country details Page
+![image](https://user-images.githubusercontent.com/59240486/143690587-f5d975c3-c5a2-4a4c-ba7c-4ec609b050c7.png)
+### Filtering countries
+![image](https://user-images.githubusercontent.com/59240486/143690611-9e38a3ec-0ea3-4b88-9816-78988b752e07.png)
+### Filtering regions inside a country
+![image](https://user-images.githubusercontent.com/59240486/143690636-4924e5d8-0d88-4e04-9328-9417cab05529.png)
 
 ## Loom video
 https://www.loom.com/share/01375ac6aa9f4c2e9d4306d3935c81a9
