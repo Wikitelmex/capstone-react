@@ -197,6 +197,7 @@ const today = new Date();
 const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
 
 
+/*
 response.data = (
   {
     "dates": {
@@ -230,3 +231,15 @@ const countries = Object.keys(apiResponse).map((key) => (
     ...apiResponse[key],
   }));
 console.log(countries);
+*/
+
+arrayOrd = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+aux = 1;
+arrayOrd.map((item) => {
+  console.log(
+    aux < 2 ? "n" : "b"
+  );
+  aux < 3 ? aux++ : aux = 0;
+  console.log(item);
+  console.log("----");
+});
