@@ -27,13 +27,17 @@ export const fetchCountriesFailure = (error) => ({
 
 export const fetchCountries = () => (dispatch) => {
   const today = new Date();
-  const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+  const dd = String(today.getDate()).padStart(2, '0');
+  const mm = String(today.getMonth() + 1).padStart(2, '0');
+  const date = `${today.getFullYear()}-${mm}-${dd}`;
 
   dispatch(fetchCountriesRequest());
   axios
     .get(`https://api.covid19tracking.narrativa.com/api/${date}`)
     .then((response) => {
+      console.log(response);
       const apiResponse = response.data.dates[date].countries;
+      console.log(apiResponse);
       const countries = Object.keys(apiResponse).map((key) => (
         {
           ...apiResponse[key],
