@@ -35,9 +35,7 @@ export const fetchCountries = () => (dispatch) => {
   axios
     .get(`https://api.covid19tracking.narrativa.com/api/${date}`)
     .then((response) => {
-      console.log(response);
       const apiResponse = response.data.dates[date].countries;
-      console.log(apiResponse);
       const countries = Object.keys(apiResponse).map((key) => (
         {
           ...apiResponse[key],

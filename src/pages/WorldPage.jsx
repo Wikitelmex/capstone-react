@@ -79,7 +79,7 @@ const Worldpage = ({
 Worldpage.propTypes = {
   fetchCountries: PropTypes.func.isRequired,
   countryData: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     today_confirmed: PropTypes.number.isRequired,
     source: PropTypes.string.isRequired,
@@ -89,7 +89,7 @@ Worldpage.propTypes = {
     error: PropTypes.string,
   }).isRequired,
   countryFilteredData: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     today_confirmed: PropTypes.number.isRequired,
     source: PropTypes.string.isRequired,

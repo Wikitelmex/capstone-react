@@ -1,4 +1,5 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
+import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
 import regionsReducer from './regions/regionsReducer';
@@ -11,7 +12,7 @@ const mixReducers = combineReducers({
 
 const store = createStore(
   mixReducers,
-  applyMiddleware(thunk),
+  applyMiddleware(thunk, logger),
 );
 
 export default store;

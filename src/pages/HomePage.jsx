@@ -80,12 +80,14 @@ const HomePage = ({
         {
           regionFilteredData.map((region) => (
             <tr className="d-flex flex-row justify-content-between p-3" key={region.id}>
-              <span>{region.name}</span>
-              today confirmed:
-              {region.today_confirmed}
-              <NavLink to={(`/region/${region.id}`)}>
-                <i className="bi bi-arrow-right-circle text-light" />
-              </NavLink>
+              <td>
+                <span>{region.name}</span>
+                today confirmed:
+                {region.today_confirmed}
+                <NavLink to={(`/region/${region.id}`)}>
+                  <i className="bi bi-arrow-right-circle text-light" />
+                </NavLink>
+              </td>
             </tr>
           ))
         }
