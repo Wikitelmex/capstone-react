@@ -1,0 +1,15 @@
+.world-card {
+  opacity: 0.2;
+  background: url(https://thumbs.dreamstime.com/b/logo-globe-earth-icon-earth-dark-background-white-logo-globe-earth-icon-earth-dark-background-133039599.jpg);
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.card {
+  border-radius: 0;
+}
+
+tr:nth-child(even) { background-color: #d04379; }
